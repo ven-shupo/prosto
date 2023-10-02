@@ -1,26 +1,31 @@
 import React, { useState, useMemo, useRef } from 'react'
 import TinderCard from 'react-tinder-card'
-
+import richard from './img/richard.jpg'
 const db = [
   {
     name: 'Richard Hendricks',
-    url: './img/richard.jpg'
+    url: richard,
+    rate: 5,
   },
   {
     name: 'Erlich Bachman',
-    url: './img/erlich.jpg'
+    url: richard,
+    rate: 5,
   },
   {
     name: 'Monica Hall',
-    url: './img/monica.jpg'
+    url: richard,
+    rate: 5,
   },
   {
     name: 'Jared Dunn',
-    url: './img/jared.jpg'
+    url: richard,
+    rate: 5,
   },
   {
     name: 'Dinesh Chugtai',
-    url: './img/dinesh.jpg'
+    url: richard,
+    rate: 5,
   }
 ]
 
@@ -43,10 +48,6 @@ function Advanced () {
     currentIndexRef.current = val
   }
 
-  const canGoBack = currentIndex < db.length - 1
-
-  const canSwipe = currentIndex >= 0
-
   // set last direction and decrease current index
   const swiped = (direction, nameToDelete, index) => {
     setLastDirection(direction)
@@ -60,20 +61,6 @@ function Advanced () {
     // TODO: when quickly swipe and restore multiple times the same card,
     // it happens multiple outOfFrame events are queued and the card disappear
     // during latest swipes. Only the last outOfFrame event should be considered valid
-  }
-
-  const swipe = async (dir) => {
-    if (canSwipe && currentIndex < db.length) {
-      await childRefs[currentIndex].current.swipe(dir) // Swipe the card!
-    }
-  }
-
-  // increase current index and show card
-  const goBack = async () => {
-    if (!canGoBack) return
-    const newIndex = currentIndex + 1
-    updateCurrentIndex(newIndex)
-    await childRefs[newIndex].current.restoreCard()
   }
 
   return (
@@ -97,18 +84,14 @@ function Advanced () {
             onCardLeftScreen={() => outOfFrame(character.name, index)}
           >
             <div
-              style={{ backgroundImage: 'url(' + character.url + ')' }}
+              style={{ backgroundImage:`url(${character.url})` }}
               className='card'
             >
               <h3>{character.name}</h3>
+              <rate>{character.rate}⭐</rate>
             </div>
           </TinderCard>
         ))}
-      </div>
-      <div className='buttons'>
-        <button style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('left')}>Swipe left!</button>
-        <button style={{ backgroundColor: !canGoBack && '#c3c4d3' }} onClick={() => goBack()}>Undo swipe!</button>
-        <button style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('right')}>Swipe right!</button>
       </div>
       {lastDirection ? (
         <h2 key={lastDirection} className='infoText'>
@@ -116,7 +99,7 @@ function Advanced () {
         </h2>
       ) : (
         <h2 className='infoText'>
-          Swipe a card or press a button to get Restore Card button visible!
+          Swipe
         </h2>
       )}
     </div>

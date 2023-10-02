@@ -87,6 +87,19 @@ h2 {
   color: #fff;
 }
 
+.card rate {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  color: #fff;
+}
+
+.card rateStar {
+  position: absolute;
+  content: \2606;
+}
+
 .infoText {
   width: 100%;
   justify-content: center;
