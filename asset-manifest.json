@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/prosto/static/css/main.f77096b2.chunk.css",
-    "main.js": "/prosto/static/js/main.9ce44791.chunk.js",
-    "main.js.map": "/prosto/static/js/main.9ce44791.chunk.js.map",
+    "main.js": "/prosto/static/js/main.354fc898.chunk.js",
+    "main.js.map": "/prosto/static/js/main.354fc898.chunk.js.map",
     "runtime~main.js": "/prosto/static/js/runtime~main.0bc40996.js",
     "runtime~main.js.map": "/prosto/static/js/runtime~main.0bc40996.js.map",
-    "static/js/2.a737e1bf.chunk.js": "/prosto/static/js/2.a737e1bf.chunk.js",
-    "static/js/2.a737e1bf.chunk.js.map": "/prosto/static/js/2.a737e1bf.chunk.js.map",
+    "static/js/2.cb0566ce.chunk.js": "/prosto/static/js/2.cb0566ce.chunk.js",
+    "static/js/2.cb0566ce.chunk.js.map": "/prosto/static/js/2.cb0566ce.chunk.js.map",
     "index.html": "/prosto/index.html",
-    "precache-manifest.f7f2ba481c5f7eae8aacd5435e590e85.js": "/prosto/precache-manifest.f7f2ba481c5f7eae8aacd5435e590e85.js",
+    "precache-manifest.dbe921bcff324fea6ee8ec03330c0c7d.js": "/prosto/precache-manifest.dbe921bcff324fea6ee8ec03330c0c7d.js",
     "service-worker.js": "/prosto/service-worker.js",
     "static/css/main.f77096b2.chunk.css.map": "/prosto/static/css/main.f77096b2.chunk.css.map",
     "static/media/richard.jpg": "/prosto/static/media/richard.fce3966e.jpg"
