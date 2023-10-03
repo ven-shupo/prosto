@@ -9,7 +9,7 @@ const tg = window.Telegram.WebApp;
 function App () {
   return (
     <div className='app'>
-    data={tg}
+    data={tg.initDataUnsafe?.user?.usernam}
     <Advanced />
     </div>
   )
