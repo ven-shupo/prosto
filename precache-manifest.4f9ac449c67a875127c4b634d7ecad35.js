@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9158cb37754b25fbec271c7a3159f93d",
+    "revision": "1101a96742ac3848e0f86db42346ed05",
     "url": "/prosto/index.html"
   },
   {
-    "revision": "201d238a682ac96ce6d3",
+    "revision": "3dd6ba073ec9775239ae",
     "url": "/prosto/static/css/main.f77096b2.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/prosto/static/js/2.398302f7.chunk.js"
   },
   {
-    "revision": "201d238a682ac96ce6d3",
-    "url": "/prosto/static/js/main.dc2a004d.chunk.js"
+    "revision": "3dd6ba073ec9775239ae",
+    "url": "/prosto/static/js/main.1d87ff27.chunk.js"
   },
   {
     "revision": "b939b04448c707371894",
